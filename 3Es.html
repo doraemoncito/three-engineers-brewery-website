@@ -41,24 +41,24 @@
         .tagline {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(resources/css/img/timothy-dykes-beer.jpg);
             height: 100vh;
-            background-size: cover;
-            background-position: center;
+            background-size: contain;
+            background-position: initial;
             background-attachment: fixed;
             color: white;
         }
     </style>
     <body>
-        <header class="sticky-top">
-            <nav class="navbar navbar-expand-lg bg-dark bg-opacity-75">
-                <div class="container-fluid">
-                    <div class="flex-grow-1">
-                        <a class="navbar-brand" href="#">
-                            <img src="resources/img/logo-inv.png" alt="Logo" class="img-fluid img-thumbnail" href="#home" style="height: 60px;">
+        <header class="fixed-top bg-dark bg-opacity-75">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid clearfix">
+                    <div class="d-inline-flex m-0 p-0">
+                        <a class="navbar-brand me-0 p-0" href="#">
+                            <img src="resources/img/logo-inv.png" alt="Logo" class="img-fluid img-thumbnail invisible" href="#home" style="height: 60px; display: none">
                             <img src="resources/img/logo-trans.png" alt="Transparent Logo" class="img-fluid img-thumbnail" href="#home" style="height: 60px;">
                         </a>
                     </div>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4 fw-bolder" style="font-family: 'Source Sans 3', sans-serif">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4 fw-bolder" style="font-family: 'Source Sans 3', sans-serif">
                             <li class="nav-item">
                                 <a class="nav-link active text-light" aria-current="page" href="#about">About us</a>
                             </li>
@@ -81,12 +81,15 @@
         </header>
 
         <section id="tagline" class="tagline">
-            <div id="carousel-container" class="container-fluid p-5">
-                <div class="row row align-items-center">
-                    <div class="container col align-items-center">
-                        <div class="h1 fw-bolder flex-grow-0 m-2 mx-auto align-items-center">For the Best Beer...<br>Call an Engineer!</div>
-                        <div class="row justify-content-center col-4 m-2 mx-auto">
-                            <a class="btn btn-outline-light btn-lg rounded-pill fw-bolder" href="https://three-engineers-brewery.square.site/" target="_blank">Buy Beer!</a>
+            <div id="carousel-container" class="container-fluid">
+                <div class="row align-items-center p-5">
+                    <div class="container-fluid col align-content-center">
+                        <div class="display-3 fw-bolder d-inline-flex">
+                            For the Best<br>Beer...<br>Call an<br>Engineer!
+                        </div>
+                        <div class="row justify-content-center d-inline-flex">
+                            <a class="btn btn-outline-light btn-lg rounded-pill fw-bolder"
+                               href="https://three-engineers-brewery.square.site/" target="_blank">Buy Beer!</a>
                         </div>
                     </div>
                     <div id="spinning-carousel-cog" class="col">
@@ -123,19 +126,31 @@
             </div>
         </section>
 
-        <section class="section-about js--section-about" id="about">
-            <div class="row">
-                <h2>Welcome to 3 Engineers Brewery</h2>
-                <div class="about-text">
-                    <p>Three Engineers Brewery started as a nano brewery in a small workshop - and has grown into a fully fledged micro brewery, making distinctive, high quality ales.<br><br>The engineers met while working together as aerospace engineers at Filton, Bristol.  We all love real ales - so we decided to make our own. But first we had to build the brewing equipment.<br><br>If you want to try a pint, buy a bottle or order a cask for your tap room, please look at our beers page, or check out the latest information on Facebook.</p>
+        <section class="section-about js--section-about m-5" id="about">
+            <div class="container">
+                <div class="display-4 text-center pb-5">Welcome to 3 Engineers Brewery</div>
+                <div class="row">
+                    <div class="h5 col-4 about-text fw-light">
+                        Three Engineers Brewery started as a nano brewery in a small workshop - and has grown into a
+                        fully fledged microbrewery, making distinctive, high quality ales.<br><br>The engineers met
+                        while working together as aerospace engineers at Filton, Bristol. We all love real ales - so
+                        we decided to make our own. But first we had to build the brewing equipment.<br><br>If you
+                        want to try a pint, buy a bottle or order a cask for your tap room, please look at our beers
+                        page, or check out the latest information on Facebook.</p>
+                    </div>
+                    <div class="col-8 about-map">
+                        <iframe src="https://maps.google.com/maps?q=winterbourne%20medievel%20barn&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                                id="map" style="height: 100%; width: 100%"></iframe>
+                    </div>
                 </div>
-                <div class="about-map">
-                    <iframe src="https://maps.google.com/maps?q=winterbourne%20medievel%20barn&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="map"></iframe>
-                </div>
-                <a class="map-icon" href="https://www.google.com/maps/place/Winterbourne+Medieval+Barn/@51.525931,-2.518086,14z/data=!4m5!3m4!1s0x0:0xdd9d8e4c097cea77!8m2!3d51.5259313!4d-2.5180865?hl=en-US" target="_blank"><ion-icon name="map-outline"></ion-icon></a>
+                <a class="map-icon"
+                   href="https://www.google.com/maps/place/Winterbourne+Medieval+Barn/@51.525931,-2.518086,14z/data=!4m5!3m4!1s0x0:0xdd9d8e4c097cea77!8m2!3d51.5259313!4d-2.5180865?hl=en-US"
+                   target="_blank">
+                    <ion-icon name="map-outline"></ion-icon>
+                </a>
             </div>
         </section>
-        
+
         <section class="section-beers" id="beers">
             <div class="gear-mesh">
                 <ul class="beers-showcase beers-top">
