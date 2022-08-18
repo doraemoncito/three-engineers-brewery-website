@@ -82,12 +82,12 @@
 
         <section id="tagline" class="tagline">
             <div id="carousel-container" class="container-fluid">
-                <div class="row align-items-center p-5">
-                    <div class="container-fluid col align-content-center">
-                        <div class="display-3 fw-bolder d-inline-flex">
+                <div class="row align-items-center align-content-center p-5 clearfix">
+                    <div class="col">
+                        <div class="row display-3 fw-bolder pb-4">
                             For the Best<br>Beer...<br>Call an<br>Engineer!
                         </div>
-                        <div class="row justify-content-center d-inline-flex">
+                        <div class="row d-inline-flex">
                             <a class="btn btn-outline-light btn-lg rounded-pill fw-bolder"
                                href="https://three-engineers-brewery.square.site/" target="_blank">Buy Beer!</a>
                         </div>
@@ -236,53 +236,124 @@
             <div class="pubs-gallery">
                 <div class="box pub-box" id="mate-drapers">
                     <span class="text pub-text">The Drapers Arms: Independent alehouse, providing a relaxed and sociable atmosphere. Sells real ale and traditional cider, straight from the cask, sourced from small independent producers.<br>447 Gloucester Rd, Bristol BS7 8TZ</span>
-                    <img href="https://www.thedrapersarms.co.uk/" target=”_blank” src="resources/img/drapers-800-1.jpeg" alt="Drapers Arms">
+                    <img href="https://www.thedrapersarms.co.uk/" target="_blank" src="resources/img/drapers-800-1.jpeg" alt="Drapers Arms">
                 </div>
                 <div class="box pub-box" id="mate-snuffy">
                     <span class="text pub-text">Snuffy Jacks: A community spirited independent Micropub focussing mainly on real ale from gravity but with some real cider, craft gin and a small wine selection.<br>800, Fishponds Road, Bristol BS16 3TE</span>
-                    <img href ="https://snuffy-jacks-ale-house-micropub.business.site/?fbclid=IwAR1bHSbp8G4XeOPnuqs8V35SsuSZ76EKLouvQz-mI8q1OKCsNPXYgdQjwYk" target=”_blank” src="resources/img/snuffy-800-1.jpg" alt="Snuffy Jacks">
+                    <img href ="https://snuffy-jacks-ale-house-micropub.business.site/?fbclid=IwAR1bHSbp8G4XeOPnuqs8V35SsuSZ76EKLouvQz-mI8q1OKCsNPXYgdQjwYk" target="_blank" src="resources/img/snuffy-800-1.jpg" alt="Snuffy Jacks">
                 </div>
                 <div class="box pub-box" id="mate-pear">
                     <span class="text pub-text">The Pear Tree: Cosy log fire, real ale from micro breweries.<br>6 Wotton Road, Charfield GL12 8TP.</span>
-                    <img href ="https://www.tripadvisor.ie/Restaurant_Review-g186295-d1783451-Reviews-The_Pear_Tree-Wotton_under_Edge_Stroud_District_Cotswolds_England.html" target=”_blank” src="resources/img/pear-tree-800-1.jpg" alt="The Pear Tree">
+                    <img href ="https://www.tripadvisor.ie/Restaurant_Review-g186295-d1783451-Reviews-The_Pear_Tree-Wotton_under_Edge_Stroud_District_Cotswolds_England.html" target="_blank" src="resources/img/pear-tree-800-1.jpg" alt="The Pear Tree">
                 </div>
                 <div class="box pub-box" id="mate-masons">
                     <span class="text pub-text">The Masons Arms: Traditional Family and Dog friendly village pub. Enclosed rear garden, Real Ales &amp; West Country Ciders. Live Sky Sports.<br>North Road Winterbourne BS36 1PT</span>
-                    <img href ="https://www.facebook.com/themasonspub/" target=”_blank” src="resources/img/masons-800.jpg" alt="Masons Pub">
+                    <img href ="https://www.facebook.com/themasonspub/" target="_blank" src="resources/img/masons-800.jpg" alt="Masons Pub">
                 </div>
                 <div class="box pub-box" id="mate-star">
                     <span class="text pub-text">The Star: Recently refurbished pub with community feel, live music and great beers.<br>539 Fishponds Rd,  Fishponds, Bristol BS16 3AF</span>
-                    <img href ="https://www.facebook.com/groups/thestarfishponds/" target=”_blank” src="resources/img/star.jpg" alt="The Star">
+                    <img href ="https://www.facebook.com/groups/thestarfishponds/" target="_blank" src="resources/img/star.jpg" alt="The Star">
                 </div>
             </div>
-            <div class="mates-gallery">
-                <div class="box mate-box" id="mate-phil">
-                    <span class="text mate-text">Phil Kerswell:  Some media guy we met on the way. Journalist, TV director, and writer. Built the website, so he can't be all bad.<br>www.philkerswell.uk</span>
-                    <img href ="http://www.philkerswell.uk/" target=”_blank” src="resources/img/phil-800-1.jpg" alt="Phil Kerswell">
+
+            <div class="mates-gallery row">
+                <div class="col-sm-3">
+                    <div id="mate-phil" class="card" style="width: 18rem;">
+                        <img src="resources/img/phil-800-1.jpg" class="card-img-top" alt="Phil Kerswell">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">Phil Kerswell</h5>
+                            <p class="card-text">Some media guy we met on the way. Journalist, TV director,
+                                and writer. Built the website, so he can't be all bad.</p>
+                            <div class="text-center">
+                                <a href="http://www.philkerswell.uk/" class="btn btn-outline-dark" target="_blank">www.philkerswell.uk</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box mate-box" id="mate-rob">
-                    <span class="text mate-text">Rob: Another engineer! He did all the amazing graphics.  His band SuperNova are a pure 1990’s BritPop tribute band available to hire for private parties, weddings and pubs around the Bristol area. Playing top drawer tunes from The Stone Roses, Blur, Pulp, The Charlatans, Oasis etc</span>
-                    <img href ="https://www.facebook.com/supernovabristol/" target=”_blank” src="resources/img/supernova-800-1.jpg" alt="Supernova">
+                <div class="col-sm-3">
+                    <div id="mate-rob" class="card" style="width: 18rem;">
+                        <img src="resources/img/supernova-800-1.jpg" class="card-img-top" alt="Supernova">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">Rob</h5>
+                            <p class="card-text">Another engineer! He did all the amazing graphics. His band
+                                SuperNova are a pure 1990’s BritPop tribute band available to hire for private parties,
+                                weddings and pubs around the Bristol area. Playing top drawer tunes from The Stone
+                                Roses, Blur, Pulp, The Charlatans, Oasis etc</p>
+                            <div class="text-center">
+                                <a href="https://www.facebook.com/supernovabristol/" class="btn btn-outline-dark"
+                                   target="_blank">Go to Supernova...</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box mate-box" id="mate-siba">
-                    <span class="text mate-text">SIBA: The Society of Independent Brewers. We're among many UK craft breweries who are affiliated to this organisation. Their vision is to deliver the future of British beer and become the voice of British brewing.<br>www.siba.co.uk</span>
-                    <img href ="https://www.siba.co.uk/" target=”_blank” src="resources/img/siba-500-1.png" alt="SIBA">
+                <div class="col-sm-3">
+                    <div id="mate-siba" class="card" style="width: 18rem;">
+                        <img src="resources/img/siba-500-1.png" class="card-img-top" alt="SIBA">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">SIBA</h5>
+                            <p class="card-text">The Society of Independent Brewers. We're among many UK craft breweries
+                                who
+                                are affiliated to this organisation. Their vision is to deliver the future of British
+                                beer
+                                and become the voice of British brewing.</p>
+                            <div class="text-center">
+                                <a href="https://www.siba.co.uk/" class="btn btn-outline-dark" target="_blank">www.siba.co.uk</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box mate-box" id="mate-mosquito">
-                    <span class="text mate-text">The People's Mosquito: A charity aiming to bring this   incredible WW2 plane back to British skies.<br>To Fly - To Educate- To Remember.<br>Twinned with our Mosquito Porter.<br>www.peoplesmosquito.org.uk</span>
-                    <img href ="https://www.peoplesmosquito.org.uk/" target=”_blank” src="resources/img/peoples-mosquito.png" alt="Peoples Mosquito">
+                <div class="col-sm-3">
+                    <div id="mate-mosquito" class="card" style="width: 18rem;">
+                        <img src="resources/img/peoples-mosquito.png" class="card-img-top" alt="Peoples Mosquito">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">The People's Mosquito</h5>
+                            <p class="card-text">A charity aiming to bring this incredible WW2 plane back to British
+                                skies.<br>To Fly - To Educate - To Remember.<br>Twinned with our Mosquito Porter.</p>
+                            <div class="text-center">
+                                <a href="https://www.peoplesmosquito.org.uk/" class="btn btn-outline-dark"
+                                   target="_blank">www.peoplesmosquito.org.uk</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box mate-box" id="mate-fire">
-                    <span class="text mate-text">Frampton Fire - Pizza delivery: Fantastic stone baked artisan pizza delivery in Frampton Cotterell &amp; Coalpit Heath. Event catering. Pizza parties. In-home cooking.</span>
-                    <img href ="https://www.facebook.com/FramptonFire/" target=”_blank” src="resources/img/frampton-fire-logo--250-1.jpg" alt="Frampton Fire">
+                <div class="col-sm-3">
+                    <div id="mate-fire" class="card" style="width: 18rem;">
+                        <img src="resources/img/frampton-fire-logo--250-1.jpg" class="card-img-top" alt="Frampton Fire">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">Frampton Fire - Pizza delivery</h5>
+                            <p class="card-text">Fantastic stone baked artisan pizza delivery in Frampton Cotterell &amp; Coalpit Heath. Event catering. Pizza parties. In-home cooking.</p>
+                            <div class="text-center">
+                                <a href="https://www.facebook.com/FramptonFire/" class="btn btn-outline-dark"
+                                   target="_blank">Go to Frampton Fire</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box mate-box" id="mate-camra">
-                    <span class="text mate-text">CAMRA: Including the newsletter  "Pints West". Promoting beer since men had beards.</span>
-                    <img href ="http://www.camrabristol.org.uk/" target=”_blank” src="resources/img/camra-800-1.jpg" alt="CAMRA">
+                <div class="col-sm-3">
+                    <div id="mate-camra" class="card" style="width: 18rem;">
+                        <img src="resources/img/camra-800-1.jpg" class="card-img-top" alt="CAMRA">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">CAMRA</h5>
+                            <p class="card-text">Including the newsletter "Pints West". Promoting beer since men had beards.</p>
+                            <div class="text-center">
+                                <a href="http://www.camrabristol.org.uk/" class="btn btn-outline-dark"
+                                   target="_blank">www.camrabristol.org.uk</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box mate-box" id="mate-barn">
-                    <span class="text mate-text">Winterbourne Medieval Barn Trust: Our home. Built nearly 700 years ago, undergoing conservation work to turn it into a  community resource. Our brewery is in one of the workshops.<br>https://www.winterbournebarn.org.uk/</span>
-                    <img href ="https://www.winterbournebarn.org.uk/" target=”_blank” src="resources/img/med-barn-800-2.png" alt="Winterbourne Medieval Barn">
+                <div class="col-sm-3">
+                    <div id="mate-barn" class="card" style="width: 18rem;">
+                        <img src="resources/img/med-barn-800-2.png" class="card-img-top" alt="Winterbourne Medieval Barn">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bolder">Winterbourne Medieval Barn Trust</h5>
+                            <p class="card-text">Our home. Built nearly 700 years ago, undergoing conservation work to turn it into a  community resource. Our brewery is in one of the workshops.</p>
+                            <div class="text-center">
+                                <a href="https://www.winterbournebarn.org.uk/" class="btn btn-outline-dark"
+                                   target="_blank">www.winterbournebarn.org.uk</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
