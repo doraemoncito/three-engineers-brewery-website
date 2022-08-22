@@ -36,16 +36,27 @@
     <style>
         * {
             font-family: 'Source Sans 3', 'sans-serif';
-            /*border: red dotted;*/
+            /*border: red dotted 1px;*/
         }
         .tagline {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(resources/css/img/timothy-dykes-beer.jpg);
             height: 100vh;
-            background-size: contain;
+            background-size: cover;
             background-position: initial;
             background-attachment: fixed;
             color: white;
         }
+        .section-beers {
+            padding: 0;
+            background-image: url(resources/css/img/nikola-jovanovic-pub.jpg);
+            height: 85vw;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /*display: flex;*/
+            /*justify-content: center;*/
+        }
+
     </style>
     <body>
         <header class="fixed-top bg-dark bg-opacity-75">
@@ -151,114 +162,223 @@
             </div>
         </section>
 
-        <section class="section-beers" id="beers">
-            <div class="gear-mesh">
-                <ul class="beers-showcase beers-top">
-                    <li>
-                        <figure class="beer-image l_hand">
-                            <img src="resources/img/beluga-trans.png" alt="Beluga Wheat IPA" href="https://three-engineers-brewery.square.site/" target="_blank">
-                            <div>
-                                <p>A unique mix between an IPA and wheat beer. The grain bill is a 50/50 split between classic English malts and German Wheat Malt. Bittered with Goldings and subtle fruity flavours delivered from Belgian and New Zealand hops.</p>
-                            </div>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="beer-image r_hand">
-                            <img src="resources/img/corsair-trans.png" alt="Corsair American Pale Ale" href="https://three-engineers-brewery.square.site/" target="_blank">
-                            <div>
-                                <p>A session pale ale with a mellow and fruity hop character. Dry hopped with Citra hops to add aromas of tropical fruit.</p>
-                            </div>
-                        </figure>
-                    </li>
-                </ul>
-                <ul class="beers-showcase beers-middle">
-                    <li>
-                        <figure class="beer-image l_hand">
-                            <img src="resources/img/gladiator-trans.png" alt="Gladiator Best Bitter" href="https://three-engineers-brewery.square.site/" target="_blank">
-                            <div>
-                                <p>A classic British bitter. A rich malty flavour with a hint of sweetness from a small addition of Belgian malt.</p>
-                            </div>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="beer-image r_hand">
-                            <img src="resources/img/mosquito-trans.png" alt="Mosquito Porter" href="https://three-engineers-brewery.square.site/" target="_blank">
-                            <div>
-                                <p>A dark and seriously smooth porter with a rich malty flavour with hints of Belgian malts. Bittered with classic English malts.</p>
-                            </div>
-                        </figure>
-                    </li>
-                </ul>
-                <ul class="beers-showcase beers-bottom">
-                    <li>
-                        <figure class="beer-image l_hand">
-                            <img src="resources/img/mustang-trans.png" alt="Mustang Triple Hopped IPA" href="https://three-engineers-brewery.square.site/" target="_blank">
-                            <div>
-                                <p>A seriously hoppy IPA with bags of character from Citra  hops. Dry hopped multiple times to  give a bold aroma and flavour of citrus fruit.</p>
-                            </div>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure class="beer-image r_hand">
-                            <img src="resources/img/vulcan-trans.png" alt="Vulcan British Pale Ale" href="https://three-engineers-brewery.square.site/" target="_blank">
-                            <div>
-                                <p>A heavily hopped British pale ale. Using Marris Otter malt for a pale colour and bittered using Fuggles hops to give a refreshing session pale ale.</p>
-                            </div>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
-        <section class="section-news" id="news">
-            <div class="news-content">
-                <div class="news-text">
-                    <h2>News</h2>
-                    <p>We're putting all our energy into brewing great beer - but we will be announcing new dates for tap take overs and brewery tours in 2020... please keep an eye on our Facebook page for details!</p>
-                    <div class="news-apps">
-                        <h3>Apps</h3>
-                        <img href="https://untappd.com/ThreeEngineers" src="resources/img/untappd.jpg" alt="Untappd">
-                        <img href="https://www.realalefinder.com/" src="resources/img/real-ale-finder.jpg">
-                    </div>
-                </div>
-                <div class="fb-window">
-                    <div class="fb-page" data-href="https://www.facebook.com/ThreeEngineersBrewery/" data-tabs="timeline,events" data-width="400" data-height="400" data-small-header="false" data-hide-cover="false" data-show-facepile="true" data-adapt-container-width="true">
-                        <blockquote cite="https://www.facebook.com/ThreeEngineersBrewery/" class="fb-xfbml-parse-ignore">
-                            <a href="https://www.facebook.com/ThreeEngineersBrewery/">Three Engineers Brewery</a>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="section-mates" id="mates">
-            <h2>Mates</h2>
-            <div class="pubs-gallery">
-                <div class="box pub-box" id="mate-drapers">
-                    <span class="text pub-text">The Drapers Arms: Independent alehouse, providing a relaxed and sociable atmosphere. Sells real ale and traditional cider, straight from the cask, sourced from small independent producers.<br>447 Gloucester Rd, Bristol BS7 8TZ</span>
-                    <img href="https://www.thedrapersarms.co.uk/" target="_blank" src="resources/img/drapers-800-1.jpeg" alt="Drapers Arms">
-                </div>
-                <div class="box pub-box" id="mate-snuffy">
-                    <span class="text pub-text">Snuffy Jacks: A community spirited independent Micropub focussing mainly on real ale from gravity but with some real cider, craft gin and a small wine selection.<br>800, Fishponds Road, Bristol BS16 3TE</span>
-                    <img href ="https://snuffy-jacks-ale-house-micropub.business.site/?fbclid=IwAR1bHSbp8G4XeOPnuqs8V35SsuSZ76EKLouvQz-mI8q1OKCsNPXYgdQjwYk" target="_blank" src="resources/img/snuffy-800-1.jpg" alt="Snuffy Jacks">
-                </div>
-                <div class="box pub-box" id="mate-pear">
-                    <span class="text pub-text">The Pear Tree: Cosy log fire, real ale from micro breweries.<br>6 Wotton Road, Charfield GL12 8TP.</span>
-                    <img href ="https://www.tripadvisor.ie/Restaurant_Review-g186295-d1783451-Reviews-The_Pear_Tree-Wotton_under_Edge_Stroud_District_Cotswolds_England.html" target="_blank" src="resources/img/pear-tree-800-1.jpg" alt="The Pear Tree">
-                </div>
-                <div class="box pub-box" id="mate-masons">
-                    <span class="text pub-text">The Masons Arms: Traditional Family and Dog friendly village pub. Enclosed rear garden, Real Ales &amp; West Country Ciders. Live Sky Sports.<br>North Road Winterbourne BS36 1PT</span>
-                    <img href ="https://www.facebook.com/themasonspub/" target="_blank" src="resources/img/masons-800.jpg" alt="Masons Pub">
-                </div>
-                <div class="box pub-box" id="mate-star">
-                    <span class="text pub-text">The Star: Recently refurbished pub with community feel, live music and great beers.<br>539 Fishponds Rd,  Fishponds, Bristol BS16 3AF</span>
-                    <img href ="https://www.facebook.com/groups/thestarfishponds/" target="_blank" src="resources/img/star.jpg" alt="The Star">
-                </div>
-            </div>
+<!--        <section class="section-beers" id="beers">-->
+<!--            <div class="gear-mesh">-->
+<!--                <ul class="beers-showcase beers-top">-->
+<!--                    <li>-->
+<!--                        <figure class="beer-image l_hand">-->
+<!--                            <img src="resources/img/beluga-trans.png" alt="Beluga Wheat IPA"-->
+<!--                                 href="https://three-engineers-brewery.square.site/" target="_blank">-->
+<!--                            <div>-->
+<!--                                <p>A unique mix between an IPA and wheat beer. The grain bill is a 50/50 split between-->
+<!--                                    classic English malts and German Wheat Malt. Bittered with Goldings and subtle-->
+<!--                                    fruity flavours delivered from Belgian and New Zealand hops.</p>-->
+<!--                            </div>-->
+<!--                        </figure>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <figure class="beer-image r_hand">-->
+<!--                            <img src="resources/img/corsair-trans.png" alt="Corsair American Pale Ale"-->
+<!--                                 href="https://three-engineers-brewery.square.site/" target="_blank">-->
+<!--                            <div>-->
+<!--                                <p>A session pale ale with a mellow and fruity hop character. Dry hopped with Citra hops-->
+<!--                                    to add aromas of tropical fruit.</p>-->
+<!--                            </div>-->
+<!--                        </figure>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <ul class="beers-showcase beers-middle">-->
+<!--                    <li>-->
+<!--                        <figure class="beer-image l_hand">-->
+<!--                            <img src="resources/img/gladiator-trans.png" alt="Gladiator Best Bitter"-->
+<!--                                 href="https://three-engineers-brewery.square.site/" target="_blank">-->
+<!--                            <div>-->
+<!--                                <p>A classic British bitter. A rich malty flavour with a hint of sweetness from a small-->
+<!--                                    addition of Belgian malt.</p>-->
+<!--                            </div>-->
+<!--                        </figure>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <figure class="beer-image r_hand">-->
+<!--                            <img src="resources/img/mosquito-trans.png" alt="Mosquito Porter"-->
+<!--                                 href="https://three-engineers-brewery.square.site/" target="_blank">-->
+<!--                            <div>-->
+<!--                                <p>A dark and seriously smooth porter with a rich malty flavour with hints of Belgian-->
+<!--                                    malts. Bittered with classic English malts.</p>-->
+<!--                            </div>-->
+<!--                        </figure>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <ul class="beers-showcase beers-bottom">-->
+<!--                    <li>-->
+<!--                        <figure class="beer-image l_hand">-->
+<!--                            <img src="resources/img/mustang-trans.png" alt="Mustang Triple Hopped IPA"-->
+<!--                                 href="https://three-engineers-brewery.square.site/" target="_blank">-->
+<!--                            <div>-->
+<!--                                <p>A seriously hoppy IPA with bags of character from Citra hops. Dry hopped multiple-->
+<!--                                    times to give a bold aroma and flavour of citrus fruit.</p>-->
+<!--                            </div>-->
+<!--                        </figure>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <figure class="beer-image r_hand">-->
+<!--                            <img src="resources/img/vulcan-trans.png" alt="Vulcan British Pale Ale"-->
+<!--                                 href="https://three-engineers-brewery.square.site/" target="_blank">-->
+<!--                            <div>-->
+<!--                                <p>A heavily hopped British pale ale. Using Marris Otter malt for a pale colour and-->
+<!--                                    bittered using Fuggles hops to give a refreshing session pale ale.</p>-->
+<!--                            </div>-->
+<!--                        </figure>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </section>-->
 
+        <section class="section-news" id="news">
+            <div class="container">
+                <div class="row gx-2">
+                    <div class="col-md-6">
+                        <div class="display-6 text-center pb-4 fw-normal">News</div>
+                        <div class="h5 fw-light">
+                            <p>We're putting all our energy into brewing great beer - but we will be announcing new
+                                dates for tap take-overs and brewery tours in 2020... please keep an eye on our Facebook
+                                page for details!</p>
+                        </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="display-6 text-center pb-4 fw-normal">Apps</div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a class="text-dark text-decoration-none" href="https://untappd.com/ThreeEngineers" target="_blank">
+                                                <div id="apps-untappd" class="card">
+                                                    <img
+                                                         src="resources/img/untappd.jpg"
+                                                         class="card-img-top" alt="UNTAPPD">
+                                                    <div class="card-body pb-2>
+                                                        <h5 class="card-title fw-bolder text-uppercase">UNTAPPD<h5>
+                                                        <h6 class="text-capitalize">Drink socially</h6>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a class="text-dark text-decoration-none" href="https://www.realalefinder.com/" target="_blank">
+                                                <div id="apps-realalefinder" class="card">
+                                                    <img
+                                                         src="resources/img/real-ale-finder.jpg"
+                                                         class="card-img-top" alt="Real ale finder">
+                                                    <div class="card-body pb-2">
+                                                        <h5 class="card-title fw-bolder text-capitalize">Real ale finder</h5>
+                                                        <h6 class="text-capitalize">On tap near you</h6>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6 align-self-center">
+                        <div id="facebook-window" class="fb-window text-center">
+                            <div class="display-6 text-center pb-4 fw-normal">Facebook</div>
+                            <div class="fb-page" data-href="https://www.facebook.com/ThreeEngineersBrewery/"
+                                 data-tabs="timeline,events"
+                                 data-small-header="false"
+                                 data-hide-cover="false" data-show-facepile="true" data-adapt-container-width="true">
+                                <blockquote cite="https://www.facebook.com/ThreeEngineersBrewery/"
+                                            class="fb-xfbml-parse-ignore">
+                                    <a href="https://www.facebook.com/ThreeEngineersBrewery/">Three Engineers
+                                        Brewery</a>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-mates bg-light pt-5 pb-5 shadow-sm" id="mates">
+            <div class="display-4 text-center pb-5">Mates</div>
+            <div class="pubs-gallery container">
+                <div class="row">
+                    <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+                        <a class="text-dark text-decoration-none" href="https://www.thedrapersarms.co.uk/"
+                           target="_blank">
+                            <div id="mate-drapers" class="card">
+                                <img src="resources/img/drapers-800-1.jpeg" class="card-img-top" alt="Drapers Arms">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title fw-bolder">The Drapers Arms</h5>
+                                    <p class="card-text">Independent alehouse, providing a relaxed and sociable
+                                        atmosphere.
+                                        Sells real ale and traditional cider, straight from the cask, sourced from small
+                                        independent producers.<br>447 Gloucester Rd, Bristol BS7 8TZ</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+                        <a class="text-dark text-decoration-none"
+                           href="https://snuffy-jacks-ale-house-micropub.business.site/?fbclid=IwAR1bHSbp8G4XeOPnuqs8V35SsuSZ76EKLouvQz-mI8q1OKCsNPXYgdQjwYk"
+                           target="_blank">
+                            <div id="mate-snuffy" class="card">
+                                <img src="resources/img/snuffy-800-1.jpg" class="card-img-top" alt="Snuffy Jacks">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title fw-bolder">Snuffy Jacks</h5>
+                                    <p class="card-text">A community spirited independent micro-pub focussing mainly on
+                                        real ale from gravity but with some real cider, craft gin and a small wine selection.<br>800
+                                        Fishponds Road, Bristol BS16 3TE</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+                        <a class="text-dark text-decoration-none"
+                           href="https://www.tripadvisor.ie/Restaurant_Review-g186295-d1783451-Reviews-The_Pear_Tree-Wotton_under_Edge_Stroud_District_Cotswolds_England.html"
+                           target="_blank">
+                            <div id="mate-pear" class="card">
+                                <img src="resources/img/pear-tree-800-1.jpg" class="card-img-top" alt="The Pear Tree">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title fw-bolder">The Pear Tree</h5>
+                                    <p class="card-text">Cosy log fire, real ale from micro breweries.<br>6 Wotton Road,
+                                        Charfield GL12 8TP</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+                        <a class="text-dark text-decoration-none" href="https://www.facebook.com/themasonspub/"
+                           target="_blank">
+                            <div id="mate-masons" class="card">
+                                <img src="resources/img/masons-800.jpg" class="card-img-top" alt="Masons Pub">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title fw-bolder">The Masons Arms</h5>
+                                    <p class="card-text">Traditional Family and Dog friendly village pub. Enclosed rear
+                                        garden, Real Ales &amp; West Country Ciders. Live Sky Sports.<br>North Road,
+                                        Winterbourne, BS36 1PT</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+                        <a class="text-dark text-decoration-none"
+                           href="https://www.facebook.com/groups/thestarfishponds/"
+                           target="_blank">
+                            <div id="mate-star" class="card">
+                                <img src="resources/img/star.jpg" class="card-img-top" alt="The Star">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title fw-bolder">The Star</h5>
+                                    <p class="card-text">Recently refurbished pub with community feel, live music and
+                                        great
+                                        beers.<br>539 Fishponds Rd, Fishponds, Bristol BS16 3AF</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="mates-gallery row">
                 <div class="col-sm-3">
-                    <div id="mate-phil" class="card" style="width: 18rem;">
+                    <div id="mate-phil" class="card mb-3" style="width: 16rem;">
                         <img src="resources/img/phil-800-1.jpg" class="card-img-top" alt="Phil Kerswell">
                         <div class="card-body">
                             <h5 class="card-title fw-bolder">Phil Kerswell</h5>
@@ -271,12 +391,13 @@
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div id="mate-rob" class="card" style="width: 18rem;">
+                    <div id="mate-rob" class="card mb-3" style="width: 16rem;">
                         <img src="resources/img/supernova-800-1.jpg" class="card-img-top" alt="Supernova">
                         <div class="card-body">
                             <h5 class="card-title fw-bolder">Rob</h5>
                             <p class="card-text">Another engineer! He did all the amazing graphics. His band
-                                SuperNova are a pure 1990’s BritPop tribute band available to hire for private parties,
+                                SuperNova are a pure 1990’s BritPop tribute band available to hire for private
+                                parties,
                                 weddings and pubs around the Bristol area. Playing top drawer tunes from The Stone
                                 Roses, Blur, Pulp, The Charlatans, Oasis etc</p>
                             <div class="text-center">
@@ -287,13 +408,15 @@
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div id="mate-siba" class="card" style="width: 18rem;">
+                    <div id="mate-siba" class="card mb-3" style="width: 16rem;">
                         <img src="resources/img/siba-500-1.png" class="card-img-top" alt="SIBA">
                         <div class="card-body">
                             <h5 class="card-title fw-bolder">SIBA</h5>
-                            <p class="card-text">The Society of Independent Brewers. We're among many UK craft breweries
+                            <p class="card-text">The Society of Independent Brewers. We're among many UK craft
+                                breweries
                                 who
-                                are affiliated to this organisation. Their vision is to deliver the future of British
+                                are affiliated to this organisation. Their vision is to deliver the future of
+                                British
                                 beer
                                 and become the voice of British brewing.</p>
                             <div class="text-center">
@@ -303,12 +426,13 @@
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div id="mate-mosquito" class="card" style="width: 18rem;">
+                    <div id="mate-mosquito" class="card mb-3" style="width: 16rem;">
                         <img src="resources/img/peoples-mosquito.png" class="card-img-top" alt="Peoples Mosquito">
                         <div class="card-body">
                             <h5 class="card-title fw-bolder">The People's Mosquito</h5>
                             <p class="card-text">A charity aiming to bring this incredible WW2 plane back to British
-                                skies.<br>To Fly - To Educate - To Remember.<br>Twinned with our Mosquito Porter.</p>
+                                skies.<br>To Fly - To Educate - To Remember.<br>Twinned with our Mosquito Porter.
+                            </p>
                             <div class="text-center">
                                 <a href="https://www.peoplesmosquito.org.uk/" class="btn btn-outline-dark"
                                    target="_blank">www.peoplesmosquito.org.uk</a>
@@ -317,11 +441,13 @@
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div id="mate-fire" class="card" style="width: 18rem;">
-                        <img src="resources/img/frampton-fire-logo--250-1.jpg" class="card-img-top" alt="Frampton Fire">
+                    <div id="mate-fire" class="card mb-3" style="width: 16rem;">
+                        <img src="resources/img/frampton-fire-logo--250-1.jpg" class="card-img-top"
+                             alt="Frampton Fire">
                         <div class="card-body">
                             <h5 class="card-title fw-bolder">Frampton Fire - Pizza delivery</h5>
-                            <p class="card-text">Fantastic stone baked artisan pizza delivery in Frampton Cotterell &amp; Coalpit Heath. Event catering. Pizza parties. In-home cooking.</p>
+                            <p class="card-text">Fantastic stone baked artisan pizza delivery in Frampton Cotterell
+                                &amp; Coalpit Heath. Event catering. Pizza parties. In-home cooking.</p>
                             <div class="text-center">
                                 <a href="https://www.facebook.com/FramptonFire/" class="btn btn-outline-dark"
                                    target="_blank">Go to Frampton Fire</a>
@@ -330,11 +456,12 @@
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div id="mate-camra" class="card" style="width: 18rem;">
+                    <div id="mate-camra" class="card mb-3" style="width: 16rem;">
                         <img src="resources/img/camra-800-1.jpg" class="card-img-top" alt="CAMRA">
                         <div class="card-body">
                             <h5 class="card-title fw-bolder">CAMRA</h5>
-                            <p class="card-text">Including the newsletter "Pints West". Promoting beer since men had beards.</p>
+                            <p class="card-text">Including the newsletter "Pints West". Promoting beer since men had
+                                beards.</p>
                             <div class="text-center">
                                 <a href="http://www.camrabristol.org.uk/" class="btn btn-outline-dark"
                                    target="_blank">www.camrabristol.org.uk</a>
@@ -343,11 +470,13 @@
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div id="mate-barn" class="card" style="width: 18rem;">
-                        <img src="resources/img/med-barn-800-2.png" class="card-img-top" alt="Winterbourne Medieval Barn">
+                    <div id="mate-barn" class="card mb-3" style="width: 16rem;">
+                        <img src="resources/img/med-barn-800-2.png" class="card-img-top"
+                             alt="Winterbourne Medieval Barn">
                         <div class="card-body">
                             <h5 class="card-title fw-bolder">Winterbourne Medieval Barn Trust</h5>
-                            <p class="card-text">Our home. Built nearly 700 years ago, undergoing conservation work to turn it into a  community resource. Our brewery is in one of the workshops.</p>
+                            <p class="card-text">Our home. Built nearly 700 years ago, undergoing conservation work
+                                to turn it into a community resource. Our brewery is in one of the workshops.</p>
                             <div class="text-center">
                                 <a href="https://www.winterbournebarn.org.uk/" class="btn btn-outline-dark"
                                    target="_blank">www.winterbournebarn.org.uk</a>
@@ -357,16 +486,27 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="section-contact" id="contact">
-            <h2>Call an engineer!</h2>
-            <p>Three Engineers Brewery,<br>The Cow Byers,<br>Winterbourne Medieval Barn,<br>Church Lane,<br>Winterbourne,<br>BS36 1SE<br>
-            <br><ion-icon name="call-outline"></ion-icon>  07990 570 414<br>
-            <br><ion-icon name="mail-outline"></ion-icon>  beer@threeengineersbrewery.co.uk<br>
-            <br><ion-icon name="logo-facebook" class="fb-icon" href="https://www.facebook.com/ThreeEngineersBrewery/"></ion-icon>Three Engineers Brewery</p>
+            <div class="container text-center">
+                <div class="display-4 text-center pb-5">Call an engineer!</div>
+                <p>Three Engineers Brewery,<br>The Cow Byers,<br>Winterbourne Medieval Barn,<br>Church Lane,<br>Winterbourne,<br>BS36
+                    1SE<br>
+                    <br>
+                    <ion-icon name="call-outline"></ion-icon>
+                    +44 (0) 7990 570 414<br>
+                    <br>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    beer@threeengineersbrewery.co.uk<br>
+                    <br>
+                    <ion-icon name="logo-facebook" class="fb-icon"
+                              href="https://www.facebook.com/ThreeEngineersBrewery/"></ion-icon>
+                    Three Engineers Brewery
+                </p>
+            </div>
         </section>
-        
-<!--        &lt;!&ndash; Several sections of Javascript pulled into the HTML due to deployment issues &ndash;&gt;-->
+
+        <!--        &lt;!&ndash; Several sections of Javascript pulled into the HTML due to deployment issues &ndash;&gt;-->
 <!--        <script>$('.js&#45;&#45;nav-icon').click(function() {-->
 <!--            var nav = $('.js&#45;&#45;main-nav');-->
 <!--            var icon = $('.js&#45;&#45;nav-icon i');-->
@@ -385,8 +525,9 @@
 <!--        <script src="https://use.fontawesome.com/eb0dd1db7e.js"></script>-->
 <!--        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script>-->
 <!--        <div id="fb-root"></div>-->
-<!--        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="LOrQL7ij"></script>-->
-<!--        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2R5ZLZHJQ4"></script>-->
+        <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="LOrQL7ij"></script>
+        <!--        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2R5ZLZHJQ4"></script>-->
 <!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>-->
 <!--        <script src="/resources/js/script.js"></script>-->
     <script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
